@@ -216,7 +216,7 @@ def install_vars_plugins(target):
 
 def update_wrapper():
     """Update the wrapper in place."""
-    content = download("https://raw.githubusercontent.com/flachnetz/ansiblew/master/ansiblew")
+    content = download("https://raw.githubusercontent.com/sumcumo/ansiblew/master/ansiblew")
 
     info("Replacing script at %s with new version" % sys.argv[0])
     with open(sys.argv[0], "wb") as fp:
