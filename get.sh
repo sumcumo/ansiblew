@@ -6,11 +6,11 @@ set -e
 echo "Installing ansible-wrapper into current directory"
 
 download() {
-    if ! wget -qO ansiblew https://raw.githubusercontent.com/flachnetz/ansiblew/master/ansiblew ; then
+    if ! wget -qO ansiblew https://raw.githubusercontent.com/sumcumo/ansiblew/master/ansiblew ; then
         return 1
     fi
 
-    if ! wget -qO ansiblew.json https://raw.githubusercontent.com/flachnetz/ansiblew/master/ansiblew.json ; then
+    if ! wget -qO ansiblew.json https://raw.githubusercontent.com/sumcumo/ansiblew/master/ansiblew.json ; then
         return 2
     fi
 
